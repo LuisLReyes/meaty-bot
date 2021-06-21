@@ -7,6 +7,7 @@ class MessageHandler {
 
   init() {
     this.client.on('message', msg => {
+      console.log(msg);
       if (msg.author.bot) return;
       switch (msg.channel.name) {
         case 'butcher-bot':
